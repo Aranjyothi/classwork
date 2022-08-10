@@ -1,42 +1,42 @@
-// /*let age = 8;
-// //string
-// const name ='jyothi'
-// const name2 ="Jyothi"
-// //data types
-// //Number
-// //string operator
-// let firstname = "Jyothi"
-// let lastname = "Poola"
-// //concatenation
-// const fullname = firstname+lastname
-// console.log(fullname)
+// // /*let age = 8;
+// // //string
+// // const name ='jyothi'
+// // const name2 ="Jyothi"
+// // //data types
+// // //Number
+// // //string operator
+// // let firstname = "Jyothi"
+// // let lastname = "Poola"
+// // //concatenation
+// // const fullname = firstname+lastname
+// // console.log(fullname)
 
-// //CAMEL CASE
-// //myFavoriteDesert
-// //PASCEL CASE
-// //MyFirstWestranDress
-// /* AND &&
-//     OR ||
-//     NOT !*/
-// let fire = 0
-// fire -= 10
-// fire--//decrementing by 1
-// fire++//incrementing by 1
-// fire = fire - 10
-// //console.log(fire)
-// //strict comparison
-// //===(3 equal signs)
+// // //CAMEL CASE
+// // //myFavoriteDesert
+// // //PASCEL CASE
+// // //MyFirstWestranDress
+// // /* AND &&
+// //     OR ||
+// //     NOT !*/
+// // let fire = 0
+// // fire -= 10
+// // fire--//decrementing by 1
+// // fire++//incrementing by 1
+// // fire = fire - 10
+// // //console.log(fire)
+// // //strict comparison
+// // //===(3 equal signs)
 
-// //loose comparison
-// //==(2equal sign)
-// //assignment operator
-// //=(1 equal sign)
-// //!== !=
-// /*let x = 9
-// let y = 6
-// console.log(x>5 && y<7)
-// //console.log(x==5 ||y==5)
-// //console.log(!(x==y))*/
+// // //loose comparison
+// // //==(2equal sign)
+// // //assignment operator
+// // //=(1 equal sign)
+// // //!== !=
+// // /*let x = 9
+// // let y = 6
+// // console.log(x>5 && y<7)
+// // //console.log(x==5 ||y==5)
+// // //console.log(!(x==y))*/
 // let chas =10
 // let dhiya =5
 // let both = chas+dhiya
@@ -76,7 +76,7 @@
 // box1=box2
 // console.log(box1)
 // box2 = temp
-// console.log(box2)*/
+// console.log(box2)
 
 // let num =4
 // if(num>0){
@@ -93,49 +93,64 @@
 //    console.log("welcome to the site")
 // }
 // else{
-//     console.log("access denyed")
+//     console.log("access denied")
 // }
 
-// let num =5;
-// if(num %3=== 0  && num>100){
-//       console.log('positive' )
-//       if(5>=100){
-//       console.log('number is greaterthan')
-
-let grade=67;
-
-if(grade>=60){
-    if(grade>=90){
-        console.log("A")
-    }else if(grade >=80){
-        console.log("B")
-    }else if(grade >=70){
-        console.log("C")
-    } else if(grade >=60) {
-        console.log("D")
-    } else {
-        console.log("F");
+let number =0;
+if(number>0  && number>100){
+      console.log('the number ispositive and graterthan 100');
     }
-}
-let letter = "A";
-switch(letter){
-    case "A":
-        console.log("this letter is vowel")
-    break;
-    case "e":
-        console.log("this letter is vowel")
-    break;
-    case "I":
-        console.log("this letter is vowel")
-        break;
-        case "o":
-            console.log("this letter is vowel")
-         break;
-          case "u":
-        console.log("this letter is vowel")
+      else if(number> 0 && number< 100){
+      console.log('the number is positive and lessthan 100');
+      }
+      else if(number <5 ){
+        console.log("this number is negitive");
+         }
+         else{
+            console.log("this number is zero")
+         }
+    
 
-          break;
-        default: {
-            console.log("this letter is consonent")
-        }
-}
+// let grade=67;
+
+// if(grade>=60){
+//     if(grade>=90){
+//         console.log("A")
+//     }else if(grade >=80){
+//         console.log("B")
+//     }else if(grade >=70){
+//         console.log("C")
+//     } else if(grade >=60) {
+//         console.log("D")
+//     } else {
+//         console.log("F");
+//     }
+// }
+// let letter = "b";
+// switch(letter){
+//     case "A":
+//         console.log("this letter is vowel")
+//     break;
+//     case "e":
+//         console.log("this letter is vowel")
+//     break;
+//     case "I":
+//         console.log("this letter is vowel")
+//         break;
+//         case "o":
+//             console.log("this letter is vowel")
+//          break;
+//           case "u":
+//         console.log("this letter is vowel")
+
+//           break;
+//         default: {
+//             console.log("this letter is consonent")
+//         }
+// }
+// let  number2 = 1;
+// let status =  number2 > 0  ? "Positive number"
+//     : number2 < 0
+//     ? "Negative number"
+//     : "Number is Zero";
+// console.log(status);
