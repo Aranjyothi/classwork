@@ -63,14 +63,6 @@ console.log(first5veriables)
 let last5veriables= (f+g+x+y+z)/5
 console.log(last5veriables)
 
-// let total=(average1+average2)/2
-// console.log(total)
-// let findavrage = (4,10,22,-30,55)
-// console.log(findavrage)
-// let findaverage2=(68,7,-22,9,100)
-// console.log(findaverage2)
-// let findboth =(findavrage+findaverage2)
-// console.log(findboth)
 average1=(4,10,22,-30,55)/5;
 console.log(average1)
 average2=(68,7,-22,9,100)/5;
@@ -93,8 +85,7 @@ if(num>0){
     console.log('number is positive')
 }
     else{
-        console.log('number is negitive')
-    
+        console.log('number is negitive');
         
 }
 //exercise 7
