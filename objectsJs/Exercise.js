@@ -26,21 +26,41 @@
 // // }, 
 
 //Ex1
-let myFunction = function(book){
-    let Obj ={};
-    for(let s of str){
-        if (Ojb[s]){
-            Obj[s]++
-        } else{
-            Obj[s] = 1 
+function characterCounter(string){
+    let newObj={};
+    for(let i=0;i<string.length;i++){// for(let s of string){if(newObj[s]){}}
+        let char =string[i]
+        if(newObj[char]){
+            newObj[char]++;
+        }else{
+            newObj[char]=1;
         }
-    } 
-    return Obj[s]; }
+    }
+return newObj;
+}
+//console.log(characterCounter("Hello"))
 
-console.log(['aranjyothi']);
+console.log(characterCounter("aranjyothi"));
+
+
 
 //ex2
-function change(paid, cost){
+
+function denomiNations(price, cash) {
+    let change = cash - price;
+    let obj = {};
+    let denominations = [100, 50, 20, 10, 5, 1];
+    for (let i = 0; i < denominations.length; i++) {
+      let denomination = denominations[i];
+      let numOfDenominations = Math.floor(change / denomination);
+      obj[denomination] = numOfDenominations;
+      change = change % denomination;
+    }
+    return obj;
+  }
+  console.log(denomiNations(10, 100));
+ 
+/*function change(paid, cost){
     paid*= 0;
     cost*= 0;
      let changeReturn {
@@ -101,4 +121,4 @@ function change(paid, cost){
 console.log(change(100, 28.09));
 
 
-//excrcise
+//excrcise*/
