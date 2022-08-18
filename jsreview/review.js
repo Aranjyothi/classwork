@@ -22,20 +22,35 @@
 // console.log('Hello, my name is ' + yourName)
 
 //c
-const a = 8;
-const b = 50;
-const c = 57;
-const d = 16;
-const e = 'Jyothi';
+// const a = 8;
+// const b = 50;
+// const c = 57;
+// const d = 16;
+// const e = 'Jyothi';
 
-console.log(a < b);
-console.log(c > d);
-console.log('Name' === 'Name');
+// console.log(a < b);
+// console.log(c > d);
+// console.log('Name' === 'Name');
 
-console.log(true || false);
-console.log(false && false && false && false && false || true);
-console.log(false == false);
-console.log(e === 'Kevin');
-console.log(a != b || c);
-console.log(a * a === d);
-console.log(48 == '48');
+// console.log(true || false);
+// console.log(false && false && false && false && false || true);
+// console.log(false == false);
+// console.log(e === 'Kevin');
+// console.log(a != b || c);
+// console.log(a * a === d);
+// console.log(48 == '48');
+//D 1-4
+// let animal = "dog"; // change variable name
+// if (animal === "cow"){
+//     console.log ("mooooo")
+//  }
+//  else {
+//     console.log("Hey! You're not a cow.")
+//  }
+//E 1 and 2
+let age = 10;//change the age
+if(age >= 16){
+    console.log('Here are the key!')
+} else if(age <16){
+    console.log('Sorry, you are to young!')
+}
