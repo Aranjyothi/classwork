@@ -21,4 +21,21 @@
 // let yourName = 'Marleni'
 // console.log('Hello, my name is ' + yourName)
 
+//c
+const a = 8;
+const b = 50;
+const c = 57;
+const d = 16;
+const e = 'Jyothi';
 
+console.log(a < b);
+console.log(c > d);
+console.log('Name' === 'Name');
+
+console.log(true || false);
+console.log(false && false && false && false && false || true);
+console.log(false == false);
+console.log(e === 'Kevin');
+console.log(a != b || c);
+console.log(a * a === d);
+console.log(48 == '48');
