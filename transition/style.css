@@ -1,0 +1,133 @@
+
+body{
+    align-items: center;
+}
+div {
+
+    width: 100px;
+    height: 100px;
+    transition: width 2s;
+  
+ 
+  }
+  #class{
+    width: 100px;
+    height: 100px;
+    transition: width 2s;
+    align-self: flex-end;
+    padding-left: 40%;
+  }
+  
+  .div1 {
+     background-color: red;
+    transition-timing-function: linear;
+    margin: 50;
+}
+  .div2 {   
+     background-color:blue;
+    transition-timing-function: ease;
+    margin: 50;
+}
+
+  .div1:hover {
+    width: 300px;
+  }
+  .div2:hover {
+    width: 300px;
+  }
+
+
+  #hi{
+    position: absolute;
+    font-style: italic;
+    z-index: -1;
+    padding-left: 45%;
+    padding-top:6%;
+  }
+
+#ex{
+    height: 200px;
+    width: 200px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-self: flex-end;
+    padding-left: 40%;
+    
+    
+    /* transition: transform 1s ease-in-out; */
+}
+
+.div3 {
+    background-color:green;
+    transform-origin: top left;
+    transition: transform 1s ease-in-out;
+    margin: 50;
+}
+
+.div4{
+    background-color: yellow;
+    transform-origin: right top;
+    transition: transform 1s ease-in-out;
+    margin: 50;
+}
+
+.div5{
+    background-color: brown;
+    transform-origin: bottom left;
+    transition: transform 1s ease-in-out;
+    margin: 50;
+}
+
+.div6{
+    background-color: olivedrab;
+    transform-origin: bottom right;
+    transition: transform 1s ease-in-out;
+    margin: 50;
+}
+
+
+
+#ex:hover .div3 {
+    transform: rotate(90deg);
+    /* padding-left: 30px;
+    padding-bottom: 30px; */
+}
+
+#ex:hover .div4 {
+    transform: rotate(-90deg);
+    /* padding-right: 30px;
+    padding-bottom: 30px; */
+    
+}
+
+#ex:hover .div5 {
+    transform: rotate(-90deg);
+    /* padding-left: 30px;
+    padding-top: 30px; */
+}
+
+#ex:hover .div6{
+    transform: rotate(90deg);
+    /* transform:skew() translate(50px); */
+    /* padding-right: 30px;
+    padding-top: 30px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
