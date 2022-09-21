@@ -1,5 +1,5 @@
 body {
-    background:black;
+    background: lightslategray;
 }
 
 .container {
@@ -8,6 +8,7 @@ body {
     height: 300px;
     display: grid;
     grid-gap: 4px;
+    background-color: black;
     grid-template-rows: 100px 100px 1fr 1fr;
     grid-template-columns: 80px 1fr 30px;
     font-size: 0;

@@ -42,7 +42,7 @@ let radio = {
 };
    
 function changeStation(max){
-        //let stationNum = getRandomInt(2);
+
         let stationNum = Math.floor(Math.random() * max);
         //console.log(stationNum);
 
@@ -55,5 +55,5 @@ function changeStation(max){
 
     }
 
-    changeStation(2);
+    changeStation();
 

@@ -108,11 +108,32 @@ div {
 
 #ex:hover .div6{
     transform: rotate(90deg);
-    /* transform:skew() translate(50px); */
-    /* padding-right: 30px;
-    padding-top: 30px; */
+    /* transform:skew() translate(50px); 
+     padding-right: 30px;
+    padding-top: 30px;  */
+} 
+#jenga{
+  color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.jenga-1, .jenga-3, .jenga-5, .jenga-7, .jenga-9 {
+  background-color: darkgray;
+  outline: 1px solid black;
+  width: 150px;
+  height: 65px;
+  transition: height 1s ease-in-out;
 }
 
+.jenga-2, .jenga-4, .jenga-6, .jenga-8, .jenga-10 {
+  background-color: rgb(77, 74, 74);
+  outline: 1px solid black;
+  width: 150px;
+  height: 65px;
+  transition: min-height 1s ease-in-out;
+}
 
 
 

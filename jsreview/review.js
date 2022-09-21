@@ -130,10 +130,172 @@
 // myArray.push('Aegon','misic');
 // myArray.shift();
 // myArray.unshift('Bob Marley');
-// //myArray.slice()
+// myArray.slice()
 // myArray.pop();
 // myArray.splice(2)
 // myArray.reverse()
 // //yes, the array was mutated. Mutate means to change the orginal structure.
 // //Yes, it returned the orginal brbackwards.
 // console.log(myArray);
+// // console.log(myArray.slice(2));
+// //F1 - 
+// let number = 0;
+// if (number < 100){
+//         console.log('little number')
+// }
+// else{
+//         console.log('bignumber')
+// }
+
+// //G1 - G3
+// let numOfMonkey = 7;
+// if(numOfMonkey<5){
+//         console.log('little number')
+// } else if(numOfMonkey > 10){
+//         console.log('Big number')
+// } else{
+//         console.log('Monkey')
+// }
+//H1 
+//H1 
+// console.log('Kristyn is rocking that ' + kristynsCloset[2] + ' today!');
+// H2- 
+// kristynsCloset.splice(6,0,'raybans');
+// console.log(kristynsCloset)
+// //H3- 
+// kristynsCloset[5] = 'stained knit hat'
+// console.log(kristynsCloset)
+// H4- console.log(thomsCloset[0][0])
+//H5- 
+// console.log(thomsCloset[1][1])
+// H6-
+// console.log(thomsCloset[2][1])
+//H7- 
+// console.log('Thom is looking fierce in a ' + thomsCloset[0][0] + ', ' + thomsCloset[1][1] + ' and ' + thomsCloset [2][1] + '!');
+// H8-
+// thomsCloset[1][2] = 'footie pajamas'
+// console.log(thomsCloset)
+//IV 
+// A - printGreeting
+// function printing(name){
+//         return "Hello there, " + name + '!'
+// } 
+// // console.log(printing('Jyothi'))
+// // //B - printCool
+// printCool= name =>{
+//         console.log(name +' is cool!')
+// }
+// printCool('Aranjyothi Poola')
+// //c - CalculateCube
+// calculateCube = a =>{
+//         volume = a * a *a;
+//         console.log(volume)
+// }
+// calculateCube(5)
+// //D - isVowel
+// isVowel = char =>{
+//         if (char == 'a' || char == 'e'|| char == 'i'|| char == 'o' || char == 'u'){
+//                 return true;
+//         } else{
+//         return false;
+//         } 
+// }
+// console.log(isVowel('o'))
+// //E - getTwoLengths
+// getTwoLength = (string1,string2) =>{
+//         return[string1.length, string2.length]
+// };
+// console.log(getTwoLength('shark', 'puffer fish'))
+// //F getMultipleLength
+// getMultipuleLength = arrString =>{
+//         let lengthOfString = [];
+//         for(let i = 0; i< arrString.length; i++){
+//                 lengthOfString.push(arrString[i].length);
+//         };
+//         return lengthOfString;
+// } 
+// console.log(getMultipuleLength(['hello', 'welcome','to','the','party']))
+// //G - maxOfThree
+// maxOfThree = (num1,num2,num3) =>{
+//         if(num1 >= num2 && num1 >= num3){
+//                 return num1;
+//         } else if(num2 >= num3 && num2 >= num1) {
+//                 return num2;
+//         } else if (num3 >= num2 && num3 >= num1){
+//                 return num3;
+//         }
+// }
+// console.log(maxOfThree(2,1,8))
+// //H printLongestWord
+// printLongestWord = arrOfSting =>{
+//         let longestWord = arrOfSting[0];
+//         for(let i = 0; i< arrOfSting.length; i++){
+//                 if(arrOfSting[i].length > longestWord.length){
+//                         longestWord = arrOfSting[i];
+//                 }
+//         }
+//         return longestWord;
+// }
+// console.log(printLongestWord(['Antiestablishmentarian','blackhacking']));
+//OBJECTS
+//A - 1
+//make a user object
+let user = {
+        name: 'Dhiya',
+        email: 'dhiya@gmail.com',
+        age: 5,
+       purchased:[],
+}
+// //B - 1 and 2
+user.email ="chasya@gmail.com"
+user.age++;
+
+//C - Adding keys and Values
+user['location'] = "mars, PA";
+console.log(user["location "])
+
+//D - Shopaholic 
+//1
+user.purchased.push('carbohydrates');
+//2
+user.purchased.push('peaceof mind');
+//3
+user.purchased.push('Merino Jodhpurs');
+console.log(user.purchased[2]);
+//E Objecti-within-object
+//1
+user.friend ={
+        name: 'Aaron',
+        age: 21,
+        location: 'Long Beach, CA',
+        purchased: []
+}
+//2
+console.log(user.friend.name)
+//3
+console.log(user.friend.location)
+//4
+user.friend.age = 55;
+//5
+user.friend.purchased.push('The One Ring');
+//6
+user.friend.push('A latte');
+//7 
+console.log(user.friend.purchased[1]);
+//F Loops
+//1
+for(let i = 0; i < user.purchased.length; i++){
+        console.log(user.purchased[i])
+}
+//2
+for(let j = 0; j < user.friend.purchased.length; j++){
+        console.log(user.friend.purchsed[j]);
+}
+
+//
+
+
+
+
+
+
