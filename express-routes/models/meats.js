@@ -1,4 +1,4 @@
-const meat = [
+const meats = [
     {
         name: 'hamburger',
         type: 'rare'
@@ -12,4 +12,4 @@ const meat = [
         type: 'wing',
     }
 ];
-module.exports = meat
+module.exports = meats

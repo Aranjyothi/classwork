@@ -12,22 +12,23 @@ const vegetable = require('../models/vegetable.js')
 
 // Setup "index" route
 router.get('/', (req, res) => {
-    res.send(vegetable)
+    res.render('Vegetable/Index',{vegetable:vegetable})
 })
 
 // Setup "new" route
 router.get('/new', (req, res) => {
-    res.send('<form>Create fruit</form>')
+    res.render('Vegetable/New')
 })
 
 // Setup "create" route
 router.post('/', (req, res) => {
-    res.send('Creating a new fruit! (in DB)')
+    vegetable.push(req.body)
+    res.redirect('/vegetable')
 })
 
 // Setup "show" route  
 router.get('/:index', (req, res) => {
-    res.send(vegetable[req.params.index])
+    res.render('Vegetable/Show',{vegetable:vegetable[req.params.index]})
 })
 
 // Setup "edit" route
@@ -44,4 +45,4 @@ router.put('/:index', (req, res) => {
 router.delete('/:index', (req, res) => {
     res.send('Deleting a fruit at index! (in DB)')
 })
-module.exports = router
+module.exports = router;
