@@ -4,7 +4,7 @@ class New extends React.Component {
         return (
             <div>
                 <h1>New Page</h1>
-                <form action="/vegetable" method="POST">
+                <form action="/vegetables" method="POST">
                     <label htmlFor="name">Name:</label>
                     <input type="text" id="name" name="name" />
 

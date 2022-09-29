@@ -1,29 +1,30 @@
 const React = require('react')
+const DefaultLayout = require('../layouts/DefaultLayout')
+
 
 class Index extends React.Component {
 
     render() {
 
-        // Object Destructuring
-        const {vegetable} = this.props
-
-        
+        const { vegetables} = this.props
+        console.log(vegetables)
         return (
-            <div>
-                <h1>vegetables Index Page</h1>
-                <ul>
-                    {vegetable.map((veggie, i) => {
-                        return (
-                            <li key={i}>
-                               The<a href={`/vegetable/${i}`}> {veggie.name} </a> is {veggie.type}
-                            </li>
-                        )
-                    })}
-                </ul>
-                <nav>
-                    <a href="/vegetable/new">Create new vegetables</a>
-                </nav>
-            </div>
+            <DefaultLayout title="All Vegetables" foodGroup="vegetable">
+                    <h1>Vegetable Index Page</h1>
+                    <ul id="vegetables-index">
+                        {vegetables.map((vegetable) => {
+                            return (
+                                <li key={vegetable._id}>
+                                    The <a href={`/vegetables/${vegetable._id}`}>{vegetable.name}</a> is {vegetable.color}.
+                                </li>
+                            )
+                        })}
+                    </ul>
+
+                    <nav>
+                        <a href="/vegetables/new">Create a new a vegetable</a>
+                    </nav>
+            </DefaultLayout>
         )
     }
 }

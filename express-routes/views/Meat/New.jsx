@@ -9,7 +9,7 @@ class New extends React.Component{
                     <input type="text" id="name" name="name" />
 
                     <label htmlFor="type">Type:</label>
-                    <input type="text" id="type" name="Type"/>
+                    <input type="text" id="Type" name="Type"/>
 
                     <input type="submit" value="Create Meat"/>
 

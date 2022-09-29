@@ -1,48 +1,54 @@
-//lode Express
+// Load express
 const express = require('express')
 
+// Create a special router object for our routes
 const router = express.Router()
 
-//load vegetable data
-const vegetable = require('../models/vegetable.js')
-// Setup "root" routes
-// router.get('/', (req, res) => {
-//     res.send('<h1>Hello World!</h1>')
-// })
+// Bring in controller functions (destructure methods)
+
+const {
+    findAllVegetable,
+    seedStarterData,
+    showNewView,
+    deleteOneVegetable,
+    updateOneVegetable,
+    createNewVegetable,
+    showEditView,
+    showOneVegetable, } = require('../controllers/vegetableController')
+
+// Bring in controller object (with methods attached)
+// const fruitController = require('../controllers/fruitController')
+// Example: router.get('/', fruitController.findAllMeat)
+
+
+// I.N.D.U.C.E.S
+// Index, New, Delete, Update, Create, Edit, Show
 
 // Setup "index" route
-router.get('/', (req, res) => {
-    res.render('Vegetable/Index',{vegetable:vegetable})
-})
+router.get('/', findAllVegetable)
+
+// Setup "seed" route
+router.get('/seed', seedStarterData)
 
 // Setup "new" route
-router.get('/new', (req, res) => {
-    res.render('Vegetable/New')
-})
-
-// Setup "create" route
-router.post('/', (req, res) => {
-    vegetable.push(req.body)
-    res.redirect('/vegetable')
-})
-
-// Setup "show" route  
-router.get('/:index', (req, res) => {
-    res.render('Vegetable/Show',{vegetable:vegetable[req.params.index]})
-})
-
-// Setup "edit" route
-router.get('/:index/edit', (req, res) => {
-    res.send('<form>Edit fruit</form>')
-})
-
-// Setup "update" route
-router.put('/:index', (req, res) => {
-    res.send('Updating a fruit at index! (in DB)')
-})
+router.get('/new', showNewView)
 
 // Setup "destroy" route
-router.delete('/:index', (req, res) => {
-    res.send('Deleting a fruit at index! (in DB)')
-})
-module.exports = router;
+router.delete('/:id', deleteOneVegetable)
+
+// Setup "update" route
+router.put('/:id', updateOneVegetable)
+
+// Setup "create" route
+router.post('/', createNewVegetable)
+
+// Setup "edit" route
+router.get('/:id/edit', showEditView)
+
+// Setup "show" route  
+router.get('/:id', showOneVegetable)
+
+
+
+
+module.exports = router

@@ -1,17 +1,18 @@
-//load mongoose//
+// load mongoose
+const mongoose = require('mongoose')
 
-const mongoose =require('mongoose')
-
-//add a shortcut to schema
+// add a shortcut to Schema
 const Schema = mongoose.Schema
 
-//create our schema
+// create our Schema
 const fruitSchema = new Schema({
-name:{type:String, required:true},
-color:{type:String,required:true},
-readyToEat:Boolean
+    name: { type: String, required: true }, 
+    color: { type: String, required: true }, 
+    readyToEat: Boolean
 })
-//create a model from our Schema
-const Fruit = mongoose.model('Fruit',fruitSchema)
 
+// create a Model from our Schema
+const Fruit = mongoose.model('Fruit', fruitSchema)
+
+// export our Model
 module.exports = Fruit;

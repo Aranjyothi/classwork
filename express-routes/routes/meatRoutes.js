@@ -1,56 +1,55 @@
-//lode Express
+// Load express
 const express = require('express')
 
+// Create a special router object for our routes
 const router = express.Router()
 
-//load meat data
-const meats = require('../models/meats.js')
-// Setup "root" routes
-// router.get('/', (req, res) => {
-//     res.send('<h1>Hello World!</h1>')
-// })
+// Bring in controller functions (destructure methods)
+const { 
+    findAllMeat,
+    seedStarterData,
+    showNewView,
+    deleteOneMeat,
+    updateOneMeat,
+    createNewMeat,
+    showEditView,
+    showOneMeat
+
+} = require('../controllers/meatController')
+
+// Bring in controller object (with methods attached)
+// const fruitController = require('../controllers/fruitController')
+// Example: router.get('/', fruitController.findAllMeat)
+
+
+// I.N.D.U.C.E.S
+// Index, New, Delete, Update, Create, Edit, Show
 
 // Setup "index" route
-router.get('/', (req, res) => {
-    // res.send(meat)
+router.get('/', findAllMeat)
 
-    res.render('Meat/Index',{meats:meats})
-})
+// Setup "seed" route
+router.get('/seed', seedStarterData)
 
 // Setup "new" route
-router.get('/new', (req, res) => {
-    // res.send('<form>Create meat</form>')
-    res.render('Meat/New')
-})
-
-// Setup "create" route
-// router.post('/', (req, res) => {
-//     res.send('Creating a new fruit! (in DB)')
-// })
-router.post('/', (req, res) => {
-      meats.push(req.body)
-    res.redirect('/meats')
-    // res.send('Creating a new fruit! (in DB)')
-})
-
-// Setup "show" route  
-router.get('/:index', (req, res) => {
-    // res.send(meat[req.params.index])
-    res.render('Meat/Show',{meats:meats[req.params.index]})
-})
-
-// Setup "edit" route
-router.get('/:index/edit', (req, res) => {
-    res.send('<form>Edit fruit</form>')
-})
-
-// // Setup "update" route
-// router.put('/:index', (req, res) => {
-//     res.send('Updating a fruit at index! (in DB)')
-// })
+router.get('/new', showNewView)
 
 // Setup "destroy" route
-router.delete('/:index', (req, res) => {
-    res.send('Deleting a fruit at index! (in DB)')
-})
-module.exports = router;
+router.delete('/:id', deleteOneMeat)
+
+// Setup "update" route
+router.put('/:id', updateOneMeat)
+
+// Setup "create" route
+router.post('/', createNewMeat)
+
+// Setup "edit" route
+router.get('/:id/edit', showEditView)
+
+// Setup "show" route  
+router.get('/:id', showOneMeat)
+
+
+
+
+module.exports = router

@@ -5,14 +5,14 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 // create our Schema
-const vegetableSchema = new Schema({
+const meatSchema = new Schema({
     name: { type: String, required: true }, 
-    color: { type: String, required: true }, 
+    Type: { type: String, required: true }, 
     // readyToEat: Boolean
 })
 
 // create a Model from our Schema
-const Vegetable = mongoose.model('Vegetable', vegetableSchema)
+const Meat = mongoose.model('Meat', meatSchema)
 
 // export our Model
-module.exports = Vegetable;
+module.exports = Meat;
